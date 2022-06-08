@@ -38,12 +38,19 @@ session_start();
             <div class="profile-desc">
               <div class="profile-pic">
                 <div class="count-indicator">
-                  <img class="img-xs rounded-circle " src="../assets/images/faces/face12.jpg" alt="">
+                  <img class="img-xs rounded-circle " src="../assets/images/faces/face15.jpg" alt="">
                   <span class="count bg-success"></span>
                 </div>
                 <div class="profile-name">
-                  <h5 class="mb-0 font-weight-normal">Henry Klein</h5>
-                  <span>Gold Member</span>
+                  <h5 class="mb-0 font-weight-normal"><?php	echo $_SESSION['nombre']; ?></h5>
+                  <span>
+                    <?php
+                      if($_SESSION['rol'] = 1){
+                        echo "Administrador";
+                      }else{
+                        echo "Usuario";
+                      }
+                    ?></span>
                 </div>
               </div>
               <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
@@ -90,13 +97,13 @@ session_start();
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Empleados Activos </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Empleados Inactivos </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../admin/empleados_activos.php"> Empleados Activos </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../admin/empleados_inactivos.php"> Empleados Inactivos </a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/tables/basic-table.html">
+            <a class="nav-link" href="../admin/departamentos.php">
               <span class="menu-icon">
                 <i class="mdi mdi-hospital-building "></i>
               </span>
@@ -104,7 +111,7 @@ session_start();
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/charts/chartjs.html">
+            <a class="nav-link" href="../admin/nomina.php">
               <span class="menu-icon">
                 <i class="mdi mdi-chart-bar"></i>
               </span>
@@ -112,7 +119,7 @@ session_start();
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/icons/mdi.html">
+            <a class="nav-link" href="../admin/historico.php">
               <span class="menu-icon">
                 <i class="mdi mdi-history "></i>
               </span>
