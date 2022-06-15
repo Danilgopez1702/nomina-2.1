@@ -10,7 +10,7 @@
      $query_p1 = mysqli_query($conexion, "SELECT * FROM empleados WHERE status = 2" );
      $result_p1 = mysqli_num_rows($query_p1);
      
-     $query_d = mysqli_query($conexion, "SELECT * FROM departamentos" );
+     $query_d = mysqli_query($conexion, "SELECT * FROM departamento" );
      $result_d = mysqli_num_rows($query_d);
 ?>
             <div class="row">
