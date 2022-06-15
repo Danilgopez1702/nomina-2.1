@@ -5,9 +5,9 @@
         
         if(move_uploaded_file($_FILES['file']['tmp_name'],"../img/imagenes_nomina".$_FILES['file']['na
         me'])){ 
-        echo Archivo subido correctamente.'; 
+        echo 'Archivo subido correctamente.'; 
         }else{ 
-            echo Ocurrió algunos problemas. Inténtelo más tarde.'; 
+            echo 'Ocurrió algunos problemas. Inténtelo más tarde.'; 
         } 
         }
 
