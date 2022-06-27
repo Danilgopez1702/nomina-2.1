@@ -30,8 +30,8 @@ session_start();
       <!-- Nav principal -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-          <a class="sidebar-brand brand-logo" href="index.html"><h2 style = "color:white;">Nominas</h2></a>
-          <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="../assets/images/logo-mini.svg" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo" href="index.php"><h2 style = "color:white;">Nominas</h2></a>
+          <a class="sidebar-brand brand-logo-mini" href="index.php"><h2 style = "color:white;">N</h2></a>
         </div>
         <ul class="nav">
           <li class="nav-item profile">
@@ -129,7 +129,7 @@ session_start();
         </ul>
       </nav>
       <!-- Nav superior -->
-      <div class="container-fluid page-body-wrapper">
+      <div class="container-fluid page-body">
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar p-0 fixed-top d-flex flex-row">
           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
@@ -167,7 +167,6 @@ session_start();
           </div>
         </nav>
         <!-- partial -->
-        <div class="main-panel">
-          <div class="main-panel">   
+        <div class="main-panel">  
             <div class="content-wrapper">
             

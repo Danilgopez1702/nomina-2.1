@@ -27,8 +27,8 @@
     white-space: nowrap;
 
     img {
-      width: 30px;
-      height: 30px;
+      width: 80px;
+      height: 80px;
       border-radius: 100%;
     }
 
@@ -47,7 +47,7 @@
     }
   }
   .table-dark {
-    background: $table-dark-bg;
+    background: white;
   }
   &.table-contextual {
     color: #ffffff;

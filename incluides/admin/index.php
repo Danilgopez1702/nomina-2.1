@@ -4,10 +4,10 @@
   $query = mysqli_query($conexion, "SELECT * FROM usuarios");
      $result = mysqli_num_rows($query);
      
-     $query_p = mysqli_query($conexion, "SELECT * FROM empleados WHERE status = 1" );
+     $query_p = mysqli_query($conexion, "SELECT * FROM empleados WHERE status = 0" );
      $result_p = mysqli_num_rows($query_p);     
      
-     $query_p1 = mysqli_query($conexion, "SELECT * FROM empleados WHERE status = 2" );
+     $query_p1 = mysqli_query($conexion, "SELECT * FROM empleados WHERE status = 1" );
      $result_p1 = mysqli_num_rows($query_p1);
      
      $query_d = mysqli_query($conexion, "SELECT * FROM departamento" );
@@ -34,7 +34,7 @@
               <div class="col-sm-3 grid-margin">
                 <div class="card">
                   <div class="card-body">
-                    <h5>Empleados</h5>
+                    <h5>Empleados Activos</h5>
                     <div class="row">
                     <div class="col-5 col-sm-8 col-xl-5 my-auto">
                         <div class="d-flex d-sm-block d-md-flex align-items-center">

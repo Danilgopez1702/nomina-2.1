@@ -4,7 +4,7 @@ date_default_timezone_set('America/Mexico_City');
     $host = "localhost";
     $user = "root";
     $clave = "";
-    $bd = "nomis";
+    $bd = "nomina";
 
     $conexion = mysqli_connect($host,$user,$clave,$bd);
     if (mysqli_connect_errno()){
