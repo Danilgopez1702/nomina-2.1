@@ -12,8 +12,8 @@
     </form>  
   </div>
   <div class="container-fluid py-4">
-    <div class="table-responsive">
-      <table class="table table-striped" id="table">
+    <div class="table-responsive table-striped">
+      <table class="table " id="table">
         <thead>
           <th> ID </th>
           <th> Foto </th>
