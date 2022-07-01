@@ -1,15 +1,19 @@
 <?php 
   include_once "../header/header.php"; 
   require("../base_datos/conexion/conexion.php");
+  include "../modal/empleados.php";
 ?>
 
-  <div class="col-md-12 col-xl-12 grid-margin stretch-card">
+<div style="left: 20px;">
+      <a data-toggle="modal" href="#myModal1" class="btn btn-primary" style="border-radius: 15px;">Agregar usuario</a>  
+    </div>   
+<div class="col-md-5 col-xl-11 grid-margin stretch-card" style="top: 20px;">
     <div class="col-md-10 grid-margin stretch-card">
       <h2 class="card-title">Empleados Activos</h2> 
     </div> 
-    <form class="nav-link mt-6 mt-md-0 d-none d-lg-flex search">
-      <input type="text" id="buscar" name="buscar" class="form-control"  placeholder="Buscar Usuarios">
-    </form>  
+    <form>
+      <input type="text" id="buscar" name="buscar" class="form-control" style="border-radius: 15px;" placeholder="Buscar Usuarios">
+    </form> 
   </div>
   <div class="container-fluid py-4">
     <div class="table-responsive table-striped">
@@ -35,12 +39,13 @@
                   <td>
                     <img src="<?php echo $data['foto'] ?>" alt="image" class="rounded-circle"/> 
                   </td>
-                  <td><?php echo $data['nombre_empleado'] . $data['apellido_paterno'] . $data['apellido_materno'] ?> </td>
+                  <td><a href="caratula.php"><?php echo $data['nombre_empleado'] . " " . $data['apellido_paterno'] . " " . $data['apellido_materno'] ?></a> </td>
                   <td><?php echo $data['fecha_ingreso'] ?></td>
                   <td><?php echo $data['sueldo_mensual'] ?></td>
                   <td><?php echo $data['sueldo_diario'] ?></td>
                   <td><?php echo $data['nombre_departamento'] ?></td>
-                  <td><a href="baja_empleado.php?id='. $data['id_empleado'] ?> " class="btn btn-danger" style="border-radius:20px">Eliminar </a></td>
+                  <td><a href="../base_datos/eliminar/eliminar_empleado.php?id=<?php echo $data['id_empleado'] ?> " class="btn btn-danger" style="border-radius:20px">Eliminar </a></td>
+                  <td><a href="baja_empleado.php?id=<?php echo $data['id_empleado'] ?> " class="btn btn-warning" style="border-radius:20px">Carta de renuncia </a></td>
                 </tr>
               <?php
               }

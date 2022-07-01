@@ -35,7 +35,7 @@
                   <td>
                     <img src="<?php echo $data['foto'] ?>" alt="image" class="rounded-circle"/> 
                   </td>
-                  <td><?php echo $data['nombre_empleado'] . $data['apellido_paterno'] . $data['apellido_materno'] ?> </td>
+                  <td><a href=" caratula.php"><?php echo $data['nombre_empleado'] . " " . $data['apellido_paterno'] . " " . $data['apellido_materno'] ?></a> </td>
                   <td><?php echo $data['fecha_ingreso'] ?></td>
                   <td><?php echo $data['sueldo_mensual'] ?></td>
                   <td><?php echo $data['sueldo_diario'] ?></td>

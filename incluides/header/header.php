@@ -31,7 +31,7 @@ session_start();
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
           <a class="sidebar-brand brand-logo" href="index.php"><h2 style = "color:white;">Nominas</h2></a>
-          <a class="sidebar-brand brand-logo-mini" href="index.php"><h2 style = "color:white;">N</h2></a>
+          <a class="sidebar-brand brand-logo-mini" href="index.php"><h2 style = "color:white;">DG</h2></a>
         </div>
         <ul class="nav">
           <li class="nav-item profile">
