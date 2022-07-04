@@ -5,11 +5,11 @@
 
   <div class="col-md-12 col-xl-12 grid-margin stretch-card">
     <div class="col-md-10 grid-margin stretch-card">
-      <h2 class="card-title">Usuarios</h2> 
+      <h2 class="card-title">Departamentos</h2> 
     </div> 
-    <form class="nav-link mt-6 mt-md-0 d-none d-lg-flex search">
-      <input type="text" id="busqueda" name="busqueda" class="form-control"  placeholder="Buscar Usuarios">
-    </form>  
+    <form>
+      <input type="text" id="buscar" name="buscar" class="form-control" style="border-radius: 15px;" placeholder="Buscar Departamentos">
+    </form>   
   </div>
   <div class="container-fluid py-4">
     <div class="table-responsive">
@@ -47,7 +47,7 @@
       </table>
     </div>
   </div>
-    <script type="text/javascript">
+  <script type="text/javascript">
       var busqueda = document.getElementById('buscar');
         var table = document.getElementById("table").tBodies[0];
         buscaTabla = function(){
@@ -78,8 +78,6 @@
         });
       });
     </script>
-
-    <script src="js/usuarios.js"></script>
 
 <?php
     include_once "../header/header2.php"; 

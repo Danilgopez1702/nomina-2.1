@@ -67,9 +67,21 @@
                         </div>
                         <div class="col-md-6">
                           <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Fecha de entrada</label>
+                            <label class="col-sm-3 col-form-label">Turno</label>
                             <div class="col-sm-9">
-                              <input class="form-control" placeholder="dd/mm/yyyy" />
+                            <select class="form-control">
+                                <?php
+                                    $query = mysqli_query($conexion, "SELECT * FROM departamento");
+                                    $result = mysqli_num_rows($query);
+                                    if ($result > 0) {
+                                        while ($data = mysqli_fetch_assoc($query)) { 
+                                        ?>
+                                            <option><?php echo $data['nombre_departamento']; ?></option>
+                                        <?php 
+                                        }
+                                    }
+                                ?>
+                              </select>
                             </div>
                           </div>
                         </div>
@@ -77,31 +89,25 @@
                       <div class="row">
                         <div class="col-md-6">
                           <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Category</label>
+                            <label class="col-sm-3 col-form-label">Sueldo Mensual</label>
                             <div class="col-sm-9">
-                              <select class="form-control">
-                                <option>Category1</option>
-                                <option>Category2</option>
-                                <option>Category3</option>
-                                <option>Category4</option>
-                              </select>
+                              <input type="text" class="form-control" />
                             </div>
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Membership</label>
-                            <div class="col-sm-4">
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked> Free </label>
-                              </div>
+                            <label class="col-sm-3 col-form-label">Sueldo Diario</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
                             </div>
-                            <div class="col-sm-5">
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2"> Professional </label>
-                              </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Fecha de entrada</label>
+                            <div class="col-sm-9">
+                              <input class="form-control" placeholder="dd/mm/yyyy" />
                             </div>
                           </div>
                         </div>
