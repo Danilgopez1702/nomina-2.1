@@ -49,7 +49,7 @@
                           <div class="form-group row">
                             <label class="col-sm-3 col-form-label">Departamento</label>
                             <div class="col-sm-9">
-                              <select class="form-control">
+                              <select class="form-control" id="combo_departamento">
                                 <?php
                                     $query = mysqli_query($conexion, "SELECT * FROM departamento");
                                     $result = mysqli_num_rows($query);
@@ -69,7 +69,7 @@
                           <div class="form-group row">
                             <label class="col-sm-3 col-form-label">Turno</label>
                             <div class="col-sm-9">
-                            <select class="form-control">
+                            <select class="form-control" id="combo_turno">
                                 <?php
                                     $query = mysqli_query($conexion, "SELECT * FROM departamento");
                                     $result = mysqli_num_rows($query);
@@ -162,7 +162,7 @@
                           <div class="form-group row">
                             <label class="col-sm-3 col-form-label">Country</label>
                             <div class="col-sm-9">
-                              <select class="form-control">
+                              <select class="form-control" id="combo_country">
                                 <option>America</option>
                                 <option>Italy</option>
                                 <option>Russia</option>

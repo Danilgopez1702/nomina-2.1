@@ -21132,4 +21132,33 @@ div.tagsinput {
   -webkit-flex-grow: 1;
   flex-grow: 1; }
 
+input[type=text]:focus {
+      color: white;
+      }  
+                      
+#combo_departamento:focus {
+color: white;
+}
+
+#combo_departamento {
+color: white;
+}
+
+#combo_turno:focus {
+color: white;
+}
+
+#combo_turno {
+color: white;
+}
+
+#combo_country:focus {
+color: white;
+}
+
+#combo_country {
+color: white;
+}
+                              
+
 /*# sourceMappingURL=maps/style.css.map */

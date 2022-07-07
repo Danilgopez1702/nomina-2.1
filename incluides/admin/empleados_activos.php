@@ -12,7 +12,7 @@
       <h2 class="card-title">Empleados Activos</h2> 
     </div> 
     <form>
-      <input type="text" id="buscar" name="buscar" class="form-control" style="border-radius: 15px;" placeholder="Buscar Empleados">
+      <input type="text" id="buscar" name="buscar" class="form-control" style="border-radius: 15px;" placeholder="Buscar Usuarios">
     </form> 
   </div>
   <div class="container-fluid py-4">

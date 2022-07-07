@@ -8,7 +8,7 @@
       <h2 class="card-title">Empleados Inactivos</h2> 
     </div> 
     <form class="nav-link mt-6 mt-md-0 d-none d-lg-flex search">
-      <input type="text" id="buscar" name="buscar" class="form-control"  placeholder="Buscar Empleados">
+      <input type="text" id="buscar" name="buscar" class="form-control" style="border-radius: 15px;" placeholder="Buscar Empleados">
     </form>  
   </div>
   <div class="container-fluid py-4">
