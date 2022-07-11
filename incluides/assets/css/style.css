@@ -21136,28 +21136,32 @@ input[type=text]:focus {
       color: white;
       }  
                       
-#combo_departamento:focus {
+#dep:focus {
 color: white;
 }
 
-#combo_departamento {
+#dep {
 color: white;
 }
 
-#combo_turno:focus {
+#turno:focus {
 color: white;
 }
 
-#combo_turno {
+#turno {
 color: white;
 }
 
-#combo_country:focus {
+#fp:focus {
 color: white;
 }
 
-#combo_country {
+#fp {
 color: white;
+}
+
+#save_button{
+  
 }
                               
 
